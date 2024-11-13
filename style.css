@@ -134,5 +134,92 @@ footer {
     border-radius: 10px; /* Optional: Adds rounded corners */
     object-fit: cover; /* Ensures image fills the space consistently */
 }
+.qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Adds smooth transition */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.qa-content.show {
+    display: block;
+    max-height: 300px; /* Maximum height for the content */
+    opacity: 1;
+}
+.qa-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.qa-button {
+    background-color: #5888;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qa-button:hover {
+    background-color: #283655;
+    transform: scale(1.05);
+}
+
+.qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 600px;
+    max-height: 200px; /* Set maximum height */
+    overflow-y: auto; /* Makes it scrollable when content overflows */
+}
+
+.qa-scrollable {
+    padding: 10px;
+}
+
+.qa-item {
+    margin-bottom: 15px;
+}
+
+.qa-item p {
+    margin: 0;
+}
+
+.qa-item p strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+.qa-content {
+    display: none;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 600px;
+    max-height: 200px; /* Set a max height to make it scrollable */
+    overflow-y: auto; /* Enables scrolling when content overflows */
+}
+
   
-  
+

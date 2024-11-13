@@ -109,20 +109,64 @@
 
     <div class="qa-section">
       <button class="qa-button">
-        Want to know more about how the accident happened? (Click here)
+        Want to know more about the accident? (Click here)
       </button>
       <div class="qa-content">
-        <p>
-          The accident occurred on a rainy evening when I lost control of the
-          car. Despite trying to regain control, I ended up sliding off the
-          road...
-        </p>
+        <div class="qa-scrollable">
+          <div class="qa-item">
+            <p><strong>Q1: What year was Daisy?</strong></p>
+            <p>
+              A1: Daisy was a 2008 model, best year in my opinion in terms of
+              tech and looks, also HR engine.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p><strong>Q2: What happened?</strong></p>
+            <p>
+              A2: I got rear eneded one morning on my way to work at around 7am.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p><strong>Q3: Who hit you?</strong></p>
+            <p>
+              A3: A 17 year old girl that had just got her license, on her way
+              to school.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p>
+              <strong>Q4: insuarance get involved?</strong>
+            </p>
+            <p>
+              A4: At first i wanted to let the girl off the hook but as bills
+              piled up for potential repairs i had to go the insurance route.
+            </p>
+          </div>
+          <div class="qa-item">
+            <p><strong>Q5: Where is she now?</strong></p>
+            <p>
+              A5: "It ended up being a total loss, sadly, and I was cashed out
+              for the estimated value of the car. They let me keep her, but I
+              just didn’t really have the time nor the financial resources to
+              fix her, so I sold her to a young man that did."
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <footer>
       <p>&copy; 2024 - My 350z Memorial Page!</p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const qaButton = document.querySelector(".qa-button");
+        const qaContent = document.querySelector(".qa-content");
+
+        qaButton.addEventListener("click", function () {
+          qaContent.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>
-
